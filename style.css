@@ -1,0 +1,102 @@
+.bg-dark {
+    background-color: #161515!important
+}
+
+.navbar {
+    justify-content: flex-start;
+    padding: 1rem;
+}
+.navbar-dark
+.navbar-toggler {
+    border-color: rgba(255,255,255,0)
+}
+
+.navbar-brand {
+    margin-left: 1.5rem;
+    padding: 0px;
+}
+
+#logo-img{
+    width: 4rem;
+    height: 4rem;
+}
+#name {
+    color: rgb(165, 161, 161);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#name:hover {
+    color: rgb(247, 10, 148);
+}
+
+#date {
+    color: rgb(173, 173, 173);
+    width: auto;
+    height: 1rem;
+    margin-left: 27%;
+}
+#date:hover {
+    color: rgb(247, 10, 148);
+}
+
+[class*="container"]{
+    height: 40rem;
+    background-image: url('imgs/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#section1 {
+    width: 70%;
+    height: 33rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+}
+#data {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+}
+#data1 {
+    height: 50%;
+    width: 100%;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    background-image: url(imgs/current.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+#data2 {
+    height: 40%;
+    width: 100%;
+    background-color: rgba(255,255,255,0.3);
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+#location {
+    font-family: 'Pacifico', cursive;
+    color: rgb(255, 255, 255);
+    padding-top: 1rem;
+    font-size: 3rem;
+    text-shadow: 3px 3px #161515;
+}
+[id*="select"] {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0rem;
+}
+[class*="last"]{
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;   
+}
+#temp,
+#localTime {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px #161515;
+}
+
+
