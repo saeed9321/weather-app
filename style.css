@@ -1,10 +1,46 @@
 .bg-dark {
     background-color: #161515!important
 }
+.model {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(173, 173, 173, 0.4);
+    z-index: 1;
+    overflow: hidden;
+    display: none;
+}
+.model-content {
+    width: 50%;
+    height: 30%;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    background-color: rgba(156, 0, 0, 0.9);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.model-content input{
+    width: 50%;
+    margin-bottom: 10px;
+}
+.model-content button {
+    border: none;
+    background-color: rgb(247, 10, 148);
+    color: white;
+    width: 70px;
+    height: 25px;
+    border-radius: 5px;
+}
 
 .navbar {
     justify-content: flex-start;
     padding: 1rem;
+    width: 100%;
+    padding: 0px;
 }
 .navbar-dark
 .navbar-toggler {
@@ -15,7 +51,9 @@
     margin-left: 1.5rem;
     padding: 0px;
 }
-
+.nav-link {
+    padding-left: 20px !important;
+}
 #logo-img{
     width: 4rem;
     height: 4rem;
@@ -39,14 +77,16 @@
 }
 
 [class*="container"]{
-    height: 40rem;
+    min-height: 100vh;
+    min-width: 100%;
     background-image: url('imgs/bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 0px;
 }
 #section1 {
     width: 70%;
-    height: 33rem;
+    height: fit-content;
     margin-left: auto;
     margin-right: auto;
     padding-top: 2rem;
@@ -57,7 +97,7 @@
     border-radius: 2rem;
 }
 #data1 {
-    height: 50%;
+    height: 250px;
     width: 100%;
     border-top-right-radius: 2rem;
     border-top-left-radius: 2rem;
@@ -67,7 +107,6 @@
     text-align: center;
 }
 #data2 {
-    height: 40%;
     width: 100%;
     background-color: rgba(255,255,255,0.3);
     border-bottom-right-radius: 2rem;
@@ -82,15 +121,9 @@
     font-size: 3rem;
     text-shadow: 3px 3px #161515;
 }
-[id*="select"] {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 0rem;
-}
-[class*="last"]{
-    border-bottom-right-radius: 2rem;
-    border-bottom-left-radius: 2rem;   
+.btn {
+    width: 50%;
+    margin: 10px auto;
 }
 #temp,
 #localTime {
